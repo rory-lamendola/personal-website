@@ -1,10 +1,15 @@
-import React, { Component } from 'react';
+import React, { Component, Image } from 'react';
+
+const styles = {
+  height: 'auto',
+  width: '100%',
+};
 
 class Home extends Component {
   render() {
     return (
         <div>
-          <h2>Home</h2>
+          <img src={require('../../components/images/home.jpg')} style={styles} />
         </div>
     );
   }
