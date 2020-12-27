@@ -50,7 +50,7 @@ class Navigation extends React.Component{
             style = {{background: sage, color: cream}}
           >
             <menu style= {leftStyle}>
-              <div><h1><Link to="/" style={linkStyle}>Rory</Link></h1></div>
+              <div><h1><Link to="/personal-website" style={linkStyle}>Rory</Link></h1></div>
               <div style={{ fontFamily: 'LemonMilk'}}>
                 <div style={{fontSize: '25px'}}>Denver/Remote based software engineer and craft enthusiast.</div>
                 
@@ -60,20 +60,19 @@ class Navigation extends React.Component{
                     fontSize: '30px',
                     left: '30%',
                   }}>
-                  <div style={{textAlign: 'center'}}><Link to="/about" style={linkStyle}>About</Link></div>
-                  <div style={{textAlign: 'center'}}><Link to="/resume" style={linkStyle}>Resume</Link></div>
-                  <div style={{textAlign: 'center'}}><Link to="/crafts" style={linkStyle}>Crafts</Link></div>
-                  <div style={{textAlign: 'center'}}><Link to="/places" style={linkStyle}>Places</Link></div>
-                  <div style={{textAlign: 'center'}}><Link to="/places" style={linkStyle}>Contact</Link></div>
+                  <div style={{textAlign: 'center'}}><Link to="/personal-website/about" style={linkStyle}>About</Link></div>
+                  <div style={{textAlign: 'center'}}><Link to="/personal-website/resume" style={linkStyle}>Resume</Link></div>
+                  <div style={{textAlign: 'center'}}><Link to="/personal-website/crafts" style={linkStyle}>Crafts</Link></div>
+                  <div style={{textAlign: 'center'}}><Link to="/personal-website/places" style={linkStyle}>Places</Link></div>
                 </div>
               </div>
               <SocialMediaBar></SocialMediaBar>
             </menu>
             <div style={pageStyle}>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/about" component={About} />
-              <Route path="/resume" component={Resume} />
-              <Route path="/crafts" component={Crafts} />
+              <Route exact path="/personal-website" component={Home} />
+              <Route exact path="/personal-website/about" component={About} />
+              <Route path="/personal-website/resume" component={Resume} />
+              <Route path="/personal-website/crafts" component={Crafts} />
 
             </div>
             </SplitPane>
