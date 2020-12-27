@@ -36,7 +36,8 @@ const pageStyle = {
   top: 0,
   left: 100,
   color:'#39493E',
-  background: '#FFFDF6'
+  background: '#FFFDF6',
+  overflow: "auto"
 }
 
 class Navigation extends React.Component{
@@ -51,7 +52,7 @@ class Navigation extends React.Component{
             <menu style= {leftStyle}>
               <div><h1><Link to="/" style={linkStyle}>Rory</Link></h1></div>
               <div style={{ fontFamily: 'LemonMilk'}}>
-                <div style={{fontSize: '25px'}}>Denver/Remote based software engineer. Better at crafts than engineering.</div>
+                <div style={{fontSize: '25px'}}>Denver/Remote based software engineer and craft enthusiast.</div>
                 
                 <div style={{
                     position: "absolute",

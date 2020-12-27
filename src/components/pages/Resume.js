@@ -8,14 +8,17 @@ const exp = [
       {
         title:"Senior Software Engineer I",
         startDate:"Jan 2019", 
-        endDate:"Mar 2019",
+        endDate:"Current",
         desc:["responsibility1", "responsibility2"]
       },
       {
         title:"Software Engineer II",
         startDate:"Oct 2018", 
         endDate:"Dec 2019",
-        desc:["responsibility1", "responsibility2"]
+        desc:["Built out modularized ETL steps that can be strung together for different data processing needs", 
+        "Restructured the data warehouse into dim and fact tables to standardize our analytics, which can now be easily hooked into Looker for self service reporting.",
+        "Deployed our company's first lambda function, which can be used across AWS accounts to aggregate raw data files into our data lake."
+      ]
       },
       
   ]},
